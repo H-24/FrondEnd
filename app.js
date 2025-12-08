@@ -5,5 +5,4 @@ function LoginSubmit(event) {
     event.preventDefault();
     console.log(loginInput.value);
 }
-
 loginForm.addEventListener("submit", LoginSubmit);
