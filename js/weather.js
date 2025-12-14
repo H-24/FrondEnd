@@ -13,8 +13,7 @@ function onGeoSuccess(position) {
         const location = document.querySelector("#location");
         location.innerText = data.name;
         weather.innerText = data.weather[0].main;
-        temperature.innerText = data.main.temp;
-        
+        temperature.innerText = Math.round(data.main.temp);
     })
 }
 function onGeoError() {
